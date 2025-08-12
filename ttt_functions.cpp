@@ -151,6 +151,12 @@ char set_winner(std::vector<char> board_state, char current_player)
 
 void end_game(char winner)
 {
-
-    std::cout << "The winner is: " << winner << "!!!!\n";
+    if (winner == 'D')
+    {
+        std::cout << "It is a draw! No one wins!\n";
+    }
+    else
+    {
+        std::cout << "The winner is: " << winner << "!!!!\n";
+    }
 }

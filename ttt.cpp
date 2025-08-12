@@ -15,6 +15,7 @@ int main()
     char current_player = player_x;
     bool turn_flag = true;
     int selected_tile;
+    int moves = 0;
 
     std::vector<char> board_state = {
         ' ',
@@ -29,7 +30,7 @@ int main()
 
     char winner = ' ';
 
-    while (winner == ' ')
+    while (winner == ' ' && moves < 9)
     {
 
         if (turn_flag)
@@ -65,12 +66,16 @@ int main()
             {
                 turn_flag = 0;
             }
-
+            moves++;
             winner = set_winner(board_state, current_player);
         }
     }
 
     draw_board(board_state);
 
+    if (winner == ' ')
+    {
+        winner = 'D';
+    }
     end_game(winner);
 }
