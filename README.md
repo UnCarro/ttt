@@ -1,1 +1,1 @@
-Simple tiktaktoe game written on C++.
+Simple Tic Tac Toe game written on C++
