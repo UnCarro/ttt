@@ -2,7 +2,7 @@
 // TODO: Winner verification - DONE
 // TODO: Input overide scape - DONE
 // TODO: Modularization
-// TODO: No one wins condition
+// TODO: No one wins condition - DONE
 
 #include <iostream>
 #include <vector>
